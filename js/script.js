@@ -18,8 +18,9 @@ $(function(){
 
   $(window).scroll(function(){
 
-       // console.log("parell.winHT==" , parell.winHT);
-       // console.log("$(window).scrollTop()==", $(window).scrollTop());
+       console.log("parell.winHT==" , parell.winHT);
+       console.log("$(window).scrollTop()==", $(window).scrollTop());
+
      if($(window).scrollTop() >= parell.winHT * 1){
        $('.side_btn_set').addClass('view');
      }else{
@@ -30,6 +31,22 @@ $(function(){
         e.preventDefault();
         $("html, body").stop().animate({scrollTop: 0}, '500');
       });
+
+    $(".go_bio").on("click", function(e){
+      e.preventDefault();
+      $("html, body").stop().animate({
+        scrollTop: (parell.winHT) + 'px'
+      }, '500');
+    });
+
+
+    $(".go_work").on("click", function(e){
+      e.preventDefault();
+      $("html, body").stop().animate({
+        scrollTop: (parell.winHT * 2) + 'px'
+      }, '500');
+    });
+
 
 
     });
