@@ -241,6 +241,10 @@ font-family: 'Montserrat', sans-serif;  color:#424346; font-size: 1.25rem;
     background-size:cover;
     position: absolute;
  }
+ .page.sub2 .work.right .work_thumb.thumb0{
+   background: url("../img/thum0.jpg") no-repeat center;
+   background-position: -100px 0;
+ }
 
 .page.sub .work.right .work_thumb.thumb1{
   background: url("../img/thum1.png") no-repeat center;
@@ -252,7 +256,8 @@ font-family: 'Montserrat', sans-serif;  color:#424346; font-size: 1.25rem;
 }
 
 .page.sub .work.right .work_thumb.thumb3{
-  background: url("../img/thum3.jpg") no-repeat center;
+  background: url("../img/thum3.png") no-repeat center;
+  background-position: -85px 80;
 }
 
 .side_btn_set{
